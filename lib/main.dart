@@ -1,46 +1,27 @@
 import 'package:flutter/material.dart';
+//import lib
+import 'package:get/get.dart';
+//import screen
+import 'package:seskiramadhan/views/home_page.dart';
 
 void main() {
-  runApp(TabBarDemo());
+  runApp(MyApp());
 }
 
-class TabBarDemo extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DefaultTabController(
-        length: 4,
-        child: Scaffold(
-          appBar: AppBar(
-            flexibleSpace: TabBar(
-              tabs: [
-                Tab(
-                  icon: Icon(Icons.directions_car),
-                  child: Text('About'),
-                ),
-                Tab(
-                  icon: Icon(Icons.directions_transit),
-                  child: Text('Experience'),
-                ),
-                Tab(
-                  icon: Icon(Icons.directions_bike),
-                  child: Text('Project'),
-                ),
-                Tab(
-                  icon: Icon(Icons.directions_bike),
-                  child: Text('Skills'),
-                ),
-              ],
-            ),
-          ),
-          body: TabBarView(
-            children: [
-              Icon(Icons.directions_car),
-              Icon(Icons.directions_transit),
-              Icon(Icons.directions_bike),
-              Icon(Icons.directions_bike),
-            ],
+      home: Scaffold(
+        body: Center(
+          child: RaisedButton(
+            onPressed: () {
+              Get.offAll(HomePage());
+              Get.snackbar("Welcome Message",
+                  "Hi, My Name is Seski Ramadhan, nice to know that you access this web");
+            },
+            child: Text('Start Here'),
           ),
         ),
       ),
