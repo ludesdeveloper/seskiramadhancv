@@ -13,24 +13,27 @@ class HomePage extends StatelessWidget {
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
+          backgroundColor: Colors.green[50],
           appBar: AppBar(
             backgroundColor: Colors.green,
             flexibleSpace: TabBar(
-              indicatorColor: Colors.yellow,
+              isScrollable: true,
+              indicatorColor: Colors.green[300],
               labelColor: Colors.yellow[200],
               unselectedLabelColor: Colors.white,
               tabs: [
                 Tab(
-                  child: Text('About'),
+                  child: Text('About', style: TextStyle(color: Colors.black)),
                 ),
                 Tab(
-                  child: Text('Experience'),
+                  child:
+                      Text('Experience', style: TextStyle(color: Colors.black)),
                 ),
                 Tab(
-                  child: Text('Project'),
+                  child: Text('Project', style: TextStyle(color: Colors.black)),
                 ),
                 Tab(
-                  child: Text('Skills'),
+                  child: Text('Skills', style: TextStyle(color: Colors.black)),
                 ),
               ],
             ),
