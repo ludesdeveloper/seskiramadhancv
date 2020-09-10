@@ -7,6 +7,22 @@ class ExperiencesPage extends StatelessWidget {
       child: ListView(
         shrinkWrap: true,
         children: [
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          //one
           Align(
             alignment: Alignment.center,
             child: Text(
@@ -43,6 +59,22 @@ class ExperiencesPage extends StatelessWidget {
             child: Text('IP Telephony and Network Engineer',
                 style: TextStyle(fontSize: 20)),
           ),
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          //two
           Align(
             alignment: Alignment.center,
             child: Text('PT. Chevron Pacific Indonesia (2012 - 2019)',
@@ -56,6 +88,21 @@ class ExperiencesPage extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
                 'Maintaining Unified Communication & Collaboration System in Chevron'),
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
           ),
         ],
       ),

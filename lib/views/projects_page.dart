@@ -7,6 +7,21 @@ class ProjectsPage extends StatelessWidget {
       child: ListView(
         shrinkWrap: true,
         children: [
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
           //one
           Align(
             alignment: Alignment.center,
@@ -51,6 +66,21 @@ class ProjectsPage extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
           //two
           Align(
             alignment: Alignment.center,
@@ -91,6 +121,21 @@ class ProjectsPage extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
           //three
           Align(
             alignment: Alignment.center,
@@ -127,6 +172,21 @@ class ProjectsPage extends StatelessWidget {
           Align(
               alignment: Alignment.center,
               child: Text('Performing RESTfull API to use by GR')),
+          SizedBox(
+            height: 5,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                height: 1,
+                color: Colors.green[200],
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 5,
+          ),
           SizedBox(
             height: 20,
           ),
