@@ -1,15 +1,27 @@
 import 'package:flutter/material.dart';
 //import lib
 import 'package:get/get.dart';
+//import controller
+import 'package:seskiramadhan/controller/guest_controller.dart';
 //import screens
 import 'package:seskiramadhan/views/projects_page.dart';
 
 class ExperiencesPage extends StatelessWidget {
+  final GuestController guestController = Get.find();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.yellow,
+          title: Center(
+            child: Text(
+              'Hi ${guestController.guestName.value}, these are My Experiences',
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
         backgroundColor: Colors.yellow[200],
         body: Center(
           child: ListView(

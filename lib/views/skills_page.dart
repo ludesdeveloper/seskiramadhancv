@@ -1,15 +1,27 @@
 import 'package:flutter/material.dart';
 //import lib
 import 'package:get/get.dart';
+//import controller
+import 'package:seskiramadhan/controller/guest_controller.dart';
 //import screens
 import 'package:seskiramadhan/views/home_page.dart';
 
 class SkillsPage extends StatelessWidget {
+  final GuestController guestController = Get.find();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.orange,
+          title: Center(
+            child: Text(
+              'Skills',
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
         backgroundColor: Colors.orange[300],
         body: Center(
             child: ListView(
@@ -83,6 +95,12 @@ class SkillsPage extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Text('AWS ECS, EC2(Beginner)',
                     style: TextStyle(fontSize: 17))),
+            SizedBox(
+              height: 50,
+            ),
+            Align(
+                child: Text(
+                    '${guestController.guestName.value}, Please click button to Revisit')),
           ],
         )),
         floatingActionButton: FloatingActionButton(

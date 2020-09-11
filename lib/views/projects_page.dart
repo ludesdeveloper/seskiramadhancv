@@ -10,6 +10,15 @@ class ProjectsPage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Center(
+            child: Text(
+              'Projects',
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
         backgroundColor: Colors.blue[200],
         body: Center(
           child: ListView(
