@@ -127,9 +127,6 @@ class ProjectsPage extends StatelessWidget {
           Align(
               alignment: Alignment.center,
               child: Text('Performing RESTfull API to use by GR')),
-          SizedBox(
-            height: 50,
-          ),
         ],
       ),
     );
