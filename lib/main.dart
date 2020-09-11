@@ -14,18 +14,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body:
-            // HomePage(),
-            Center(
-          child: RaisedButton(
-            onPressed: () {
-              Get.offAll(HomePage());
-              Get.snackbar("Welcome Message",
-                  "Hi, My Name is Seski Ramadhan, nice to know that you access this web");
-            },
-            child: Text('Start Here'),
-          ),
-        ),
+        body: HomePage(),
       ),
     );
   }
