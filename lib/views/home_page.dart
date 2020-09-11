@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.green,
             flexibleSpace: TabBar(
-              isScrollable: true,
+              // isScrollable: true,
               indicatorColor: Colors.green[300],
               labelColor: Colors.yellow[200],
               unselectedLabelColor: Colors.white,

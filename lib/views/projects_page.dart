@@ -7,21 +7,6 @@ class ProjectsPage extends StatelessWidget {
       child: ListView(
         shrinkWrap: true,
         children: [
-          SizedBox(
-            height: 5,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 1,
-                color: Colors.green[200],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 5,
-          ),
           //one
           Align(
             alignment: Alignment.center,
@@ -64,22 +49,7 @@ class ProjectsPage extends StatelessWidget {
               alignment: Alignment.center,
               child: Text('Written in : Python, HTML, JavaScript')),
           SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 1,
-                color: Colors.green[200],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 5,
+            height: 50,
           ),
           //two
           Align(
@@ -119,22 +89,7 @@ class ProjectsPage extends StatelessWidget {
               child: Text(
                   'Using Multi Threading / Concurrency for maximum speed')),
           SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 1,
-                color: Colors.green[200],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 5,
+            height: 50,
           ),
           //three
           Align(
@@ -173,22 +128,7 @@ class ProjectsPage extends StatelessWidget {
               alignment: Alignment.center,
               child: Text('Performing RESTfull API to use by GR')),
           SizedBox(
-            height: 5,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                height: 1,
-                color: Colors.green[200],
-              ),
-            ],
-          ),
-          SizedBox(
-            height: 5,
-          ),
-          SizedBox(
-            height: 20,
+            height: 50,
           ),
         ],
       ),
