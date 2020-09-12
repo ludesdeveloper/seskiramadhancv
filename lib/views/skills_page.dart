@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import lib
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 //import controller
 import 'package:seskiramadhan/controller/guest_controller.dart';
 //import screens
@@ -100,12 +101,33 @@ class SkillsPage extends StatelessWidget {
             ),
             Align(
                 child: Text(
-                    '${guestController.guestName.value}, Please click button to Revisit')),
+                    '${guestController.guestName.value}, Please click button to reach Me on LinkedIn or Replay')),
           ],
         )),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Get.to(HomePage());
+            // Get.to(HomePage());
+            Get.bottomSheet(
+              Container(
+                height: 300,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    RaisedButton(
+                        child: Text('Contact Me on LinkedIn'),
+                        onPressed: () {
+                          launch(
+                              'https://www.linkedin.com/in/seski-ramadhan-18950a44/');
+                        }),
+                    RaisedButton(
+                        child: Text('Replay'),
+                        onPressed: () {
+                          Get.to(HomePage());
+                        }),
+                  ],
+                ),
+              ),
+            );
           },
           child: Icon(Icons.navigate_next),
           backgroundColor: Colors.orange,
